@@ -1,0 +1,9 @@
+<% if @posts.empty? %>
+  <p>
+    No posts!
+  </p>
+<% else %>
+<h2><%= link_to post.title, posts %></h2>
+
+  <!-- here be posts -->
+<% end %>
