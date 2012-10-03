@@ -1,7 +1,8 @@
 <h2>New post</h2>
 
 <%= form_for @post do |form| %>
-
+  <%= errors_for @post %>
+  
   <div>
     <%= form.label :title %>
     <%= form.text_field :title %>
@@ -16,8 +17,7 @@
 <%= form.submit %> or <%= link_to 'cancel', posts_path %>
 
 
-<%= form_for @post do |form| %>
 
-  <%= errors_for @post %>
+
 
 <% end %>

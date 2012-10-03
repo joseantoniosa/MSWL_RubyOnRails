@@ -2,16 +2,7 @@
 
 <%= form_for @post do |form| %>
   <%= errors_for @post %>
-  
-  <div>
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
+  <%= render form %>
 
 
 <%= form.submit %> or <%= link_to 'cancel', posts_path %>
