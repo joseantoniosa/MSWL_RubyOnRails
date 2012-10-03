@@ -3,11 +3,14 @@
 <%= div_for post do %>
     <h2><%= link_to post.title, post %></h2>
     <div class="content">
-        <%= post.content %>
+        <%= markdown post.content %>
     </div>
+    
     <div class="date">
-      <%= l post.created_at %>
+        <%= t 'post.created_at' %> <%= l post.created_at, :format => :post %>
     </div>
+    
+
 <% end %>
 
 

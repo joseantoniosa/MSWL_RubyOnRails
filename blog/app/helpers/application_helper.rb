@@ -8,4 +8,8 @@ module ApplicationHelper
               :class => 'form_errors')
     end
 
+    def markdown(text)
+        Maruku.new(text).to_html.html_safe
+    end
+
 end
