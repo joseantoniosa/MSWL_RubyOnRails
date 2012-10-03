@@ -1,11 +1,11 @@
 Blog::Application.routes.draw do
-  resources :posts
+    resources :posts
 
 
-#    resources :posts do
-#        resources :comments, :only => [:new, :create]
+    resources :posts do
+        resources :comments, :only => [:new, :create]
 #        get :drafts, :on => :collection
-#    end
+    end
 
 
 
@@ -67,7 +67,7 @@ Blog::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  root :to => "posts#index"
+    root :to => "posts#index"
 
 end
 
