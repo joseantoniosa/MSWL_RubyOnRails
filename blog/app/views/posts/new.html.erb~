@@ -12,6 +12,12 @@
     <%= form.text_area :content %>
   </div>
 
-  <%= form.submit %>
+
+<%= form.submit %> or <%= link_to 'cancel', posts_path %>
+
+
+<%= form_for @post do |form| %>
+
+  <%= errors_for @post %>
 
 <% end %>

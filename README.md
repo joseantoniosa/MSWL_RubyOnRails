@@ -1,4 +1,8 @@
 MSWL_RubyOnRails
 ================
 
-Ruby On Rails Workshop Exercise  MasterSoftwareLibre.com 
+Ruby On Rails Workshop Exercise 
+
+http://www.MasterSoftwareLibre.com 
+
+

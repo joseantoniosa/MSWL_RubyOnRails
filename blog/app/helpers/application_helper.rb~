@@ -4,7 +4,7 @@ module ApplicationHelper
 
         content_tag(:div,
           content_tag(:p, "There are so many errors in the form. Please fix them now!") +
-          content_tag(:ul, model.errors.full_messages.map {|m| content_tag :li, m}.join.html_safe),
+          content_tag(:ul, model.errors.full_messages.map {|m| content_tag :li, m}.join),
               :class => 'form_errors')
     end
 
