@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
     def index
-        @posts = Post.all
-    end
+        #@posts = Post.all
+        @posts = Post.published.order('created_at desc')
+    end 
     def show
         @post = Post.find(params[:id])
-      # @post = Post.find(params[:id])
     end
     def new
         @post = Post.new
@@ -37,6 +37,8 @@ class PostsController < ApplicationController
         redirect_to posts_url, :notice => 'Post terminated'
     end
 
-
+    def drafts
+        @posts = Post.draft.order('created_at desc')
+    end
 
 end  

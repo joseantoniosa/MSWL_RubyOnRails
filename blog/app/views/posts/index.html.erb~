@@ -4,6 +4,5 @@
   </p>
 <% else %>
     <%= render @posts %>
-    Helloooo
-  <!-- here be posts -->
+
 <% end %>
