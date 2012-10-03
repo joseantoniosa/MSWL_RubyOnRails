@@ -10,5 +10,9 @@
 <h1>My Wonderful blog</h1>
 <%= yield %>
 
+<% if flash.notice %>
+  <div id="flash"><%= flash.notice %></div>
+<% end %>
+
 </body>
 </html>
