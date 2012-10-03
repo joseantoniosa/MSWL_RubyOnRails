@@ -3,7 +3,7 @@
     No posts!
   </p>
 <% else %>
-<h2><%= link_to post.title, posts %></h2>
-
+    <%= render @posts %>
+    Helloooo
   <!-- here be posts -->
 <% end %>
