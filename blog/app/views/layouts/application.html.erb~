@@ -13,6 +13,7 @@
 <% if flash.notice %>
   <div id="flash"><%= flash.notice %></div>
 <% end %>
+<%= link_to 'New post', new_post_path %>
 
 </body>
 </html>

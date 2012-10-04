@@ -10,3 +10,9 @@
     <%= render @posts %>
 
 <% end %>
+
+
+<div class="apple_pagination">
+    <%= will_paginate @posts, :container => true %>
+</div>
+  

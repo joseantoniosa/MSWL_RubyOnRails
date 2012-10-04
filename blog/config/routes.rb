@@ -1,13 +1,10 @@
 Blog::Application.routes.draw do
 
-
     resources :posts do
         resources :comments, :only => [:new, :create]
         get :drafts, :on => :collection
     end
-
-
-
+    root :to => "posts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -66,9 +63,5 @@ Blog::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-    root :to => "posts#index"
-
 end
-
-
 
