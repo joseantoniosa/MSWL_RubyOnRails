@@ -33,3 +33,14 @@ rails generate resource NAME [field[:type][:index] field[:type][:index]] [option
 
 Hints: generate, references, belongs_to, has_many, includes, select, map
 
+== 2.2. Add pagination ==
+
+You must paginate the post in the main page. To do so we ask you to:
+
+    Find the suitable plugin or gem (don’t reinvent the wheel!). There are some solution that excels.
+
+    Paginate the post index, two posts per page
+
+    Add pagination links: next and previous page and links to page numbers
+
+Hints: kaminari, will_paginate, paginate
